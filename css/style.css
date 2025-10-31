@@ -1,0 +1,156 @@
+/* Definir a estrutura de layout da página */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    height: 100%; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0; /* Remove as margens padrões */
+    display: flex;
+    flex-direction: column; /* Coloca os elementos de cima para baixo */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+  /* Estilo básico para o cabeçalho */
+  header h1 a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #d18585; /* Define uma cor neutra */
+    font-size: 2rem; /* Aumenta o tamanho do texto */
+    font-family: 'Arial', sans-serif; /* Define uma fonte moderna */
+    font-weight: bold; /* Torna o texto mais espesso */
+    display: inline-block; /* Permite ajustar margens e padding */
+    transition: color 0.3s ease; /* Adiciona um efeito de transição */
+}
+
+/* Estilo para hover (quando o mouse passa por cima) */
+header h1 a:hover {
+    color: #0e78e1; /* Cor de destaque ao passar o mouse */
+}
+
+/* O conteúdo principal da página */
+main {
+    padding: 2rem;
+    text-align: center;
+    flex-grow: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona espaçamento */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+}
+
+
+/* Container do formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos do formulário */
+form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os campos de entrada */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Placeholder estilizado */
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Estilos para o botão */
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Ajuste de espaçamento no formulário */
+form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo para o texto da validação (opcional) */
+small {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        padding: 12px;
+    }
+}
